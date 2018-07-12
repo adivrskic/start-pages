@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title> System Settings </title>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="head-wrap">
+      <div id="header">
+        <h1 id="header-h1">
+           BIOS BROWSER SETUP UTILITY
+        </h1>
+      </div>
+      <div id="tabs">
+        <ul id="navigation">
+          <li class="active" id='maintab' onclick="toggleMain()" onkeypress="toggleMain()" tabindex="1">Main</li><!--
+          --><li id='additionaltab' onclick="toggleAdditional()" onkeypress="toggleAdditional()" tabindex="2">Additional</li>
+        </ul>
+      </div>
+    </div>
+    <div id="body-wrapper">
+      <div id="body-wrapper-inside">
+        <div id="main">
+          <div id="left-categories">
+            <div id="browser-info">
+              <h3>Browser Stats</h3>
+              <p>System Date: <span id="date" class="info-right-side"></span> </p>
+              <p>System Time:  <span id="time" class="info-right-side"></span> </p>
+              <p>Browser Code Name:  <span id='browserCode' class="info-right-side"></span> </p>
+              <p>Browser Name:  <span id="browserName" class="info-right-side"></span> </p>
+              <p>Platform:  <span id="platform" class="info-right-side"></span>  </p>
+            </div>
+            <div id="links">
+              <h3>QuickLinks</h3>
+              <ul id="links-row-1">
+                <li><a href="https://www.gamefaqs.com" tabindex="3">Link 1</a></li>
+                <li><a href="https://www.youtube.com" tabindex="4">Link 2</a></li>
+                <li><a href="https://www2.gogoanime.se" tabindex="4">Link 3</a></li>
+                <li><a href="https://www.amazon.com" tabindex="5">Link 4</a></li>
+                <li><a href="https://www.soccerway.com" tabindex="6">Link 5</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="right-info">
+            <h3>Help/Information</h3>
+
+            <p>Move Forwards: < TAB ></p>
+            <p>Move Backwards: < SHIFT + TAB ></p>
+            <p>Select: < ENTER ></p>
+          </div>
+        </div>
+        <div id="additional">
+          <div id="top-left">
+            <fieldset>
+              <legend>Reddit</legend>
+              <a href="https://old.reddit.com/r/soccer">Reddit Link 1</a>
+              <a href="https://old.reddit.com/r/vaporwave" >Reddit Link 2</a>
+              <a href="https://old.reddit.com/r/outrun">Reddit Link 3</a>
+              <a href="https://old.reddit.com/r/gaming">Reddit Link 4</a>
+              <a href="https://old.reddit.com/r/listentothis">Reddit Link 5</a>
+              <a href="https://old.reddit.com/r/web_design">Reddit Link 6</a>
+            </fieldset>
+          </div>
+          <div id="top-right">
+            <fieldset>
+              <legend>Entertainment</legend>
+              <a href="https://www2.gogoanime.se">Entertainment Link 1</a>
+              <a href="http://www.thespectrum.net">Entertainment Link 2</a>
+              <a href="https://www.kissmanga.com">Entertainment Link 3</a>
+              <a href="http://www.gundamforums.com/">Entertainment Link 4</a>
+            </fieldset>
+          </div>
+          <div id="bottom-left">
+            <fieldset>
+              <legend>Education</legend>
+              <a href="http://libgen.io/">Education Link 1</a>
+              <a href="https://www.udemy.com/">Education Link 2</a>
+              <a href="https://youtube.com">Education Link 3</a>
+              <a href="http://www.html5gamedevs.com/">Education Link 4</a>
+            </fieldset>
+          </div>
+          <div id = "bottom-right">
+            <fieldset>
+              <legend>Extras</legend>
+              <a href="http://www.mmbnchronox.com/">Extras Link 1</a>
+              <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/">Extras Link 2</a>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p id="footer-p">v01.00 &copy; Copyright Adi Vrskic 2018  ::  Property of [BIOS] Systems, Inc.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
