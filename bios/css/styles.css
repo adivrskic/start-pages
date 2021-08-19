@@ -3,48 +3,50 @@
   src: url(../assets/fonts/dosvga.ttf);
 }
 
-*, html, body{
-  margin:0;
+*,
+html,
+body {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
   height: 100%;
   background-color: white;
-  padding-top: 2.5vh;
 }
 
-#wrapper{
-    height: 80%;
-    width: 55%;
-    margin: 0 auto;
-    background-color: blue;
-    box-shadow: 2px 2px 3px  black;
+#wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: blue;
+  box-shadow: 2px 2px 3px black;
 }
 
-#head-wrap{
+#head-wrap {
   width: 100%;
   height: 10%;
 }
 
-#header{
+#header {
   width: 100%;
   height: 60%;
   text-align: center;
-  padding-top: .5%;
-  padding-bottom: .5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
 
-#header h1{
+#header h1 {
   color: white;
   font-size: 1.25vw;
   font-family: dosvga;
-  letter-spacing: .3vw;
+  letter-spacing: 0.3vw;
   line-height: 1.35;
 }
 
-#tabs{
+#tabs {
   width: 100%;
   height: 40%;
   color: white;
@@ -55,46 +57,46 @@ html, body{
   line-height: 1.8;
 }
 
-#navigation{
+#navigation {
   list-style-type: none;
   margin: 0;
   height: 100%;
 }
 
-#tabs ul li{
+#tabs ul li {
   display: inline;
   padding: 20px;
 }
 
-#navlist{
+#navlist {
   float: left;
 }
 
-#navigation li:hover{
+#navigation li:hover {
   background-color: black;
-  color:white;
+  color: white;
   cursor: pointer;
 }
 
-#navigation li:focus{
+#navigation li:focus {
   background-color: black;
-  color:white;
+  color: white;
   cursor: pointer;
   outline: none;
 }
 
-.active{
+.active {
   background-color: #d3d3d3;
   color: #00f;
 }
 
-#body-wrapper{
+#body-wrapper {
   width: 100%;
   height: 85%;
   background-color: #d3d3d3;
 }
 
-#body-wrapper-inside{
+#body-wrapper-inside {
   width: 97.5%;
   height: 95%;
   border: 2px solid #00f;
@@ -102,13 +104,13 @@ html, body{
   transform: translateY(2.5%);
 }
 
-#left-categories{
+#left-categories {
   width: 50%;
   height: 100%;
   float: left;
 }
 
-#browser-info{
+#browser-info {
   height: 35%;
   width: 100%;
   padding: 25px;
@@ -116,21 +118,20 @@ html, body{
   color: #636363;
   font-size: 1vw;
   line-height: 1.2;
-
 }
 
-#browser-info h3{
+#browser-info h3 {
   font-size: 1.25vw;
   padding-bottom: 20px;
 }
 
-.info-right-side{
+.info-right-side {
   right: 52%;
   position: absolute;
   color: #00f;
 }
 
-#links{
+#links {
   width: 100%;
   height: 65%;
   padding: 5%;
@@ -138,54 +139,54 @@ html, body{
   color: #636363;
 }
 
-#links h3{
+#links h3 {
   font-size: 1.25vw;
 }
 
-#links-row-1{
+#links-row-1 {
   width: 100%;
   padding-top: 30px;
   font-size: 1.2vw;
 }
 
-#links-row-1 li a{
+#links-row-1 li a {
   text-decoration: none;
   display: block;
   padding: 1.5vh;
   width: 30%;
 }
 
-#links-row-1 li a:visited{
+#links-row-1 li a:visited {
   color: #00f;
 }
 
-#links-row-1 li a:hover{
+#links-row-1 li a:hover {
   background-color: black;
   color: white;
 }
 
-#links-row-1 li a:active{
+#links-row-1 li a:active {
   background-color: #00f;
   color: white;
 }
 
-#links-row-1 li a:focus{
+#links-row-1 li a:focus {
   background-color: black;
   color: white;
-  outline:none;
+  outline: none;
 }
 
-#links li:nth-child(1){
+#links li:nth-child(1) {
   padding-top: 20px;
 }
 
-#links li{
+#links li {
   list-style-type: none;
   padding-bottom: 20px;
   display: inline;
 }
 
-#right-info{
+#right-info {
   width: 50%;
   height: 100%;
   border-left: 2px solid #00f;
@@ -194,19 +195,18 @@ html, body{
   font-family: dosvga;
   color: #636363;
   font-size: 1vw;
-
 }
 
-#right-info h3{
+#right-info h3 {
   font-size: 1.25vw;
   padding-bottom: 20px;
 }
 
-#right-info p{
-  padding-bottom:15px;
+#right-info p {
+  padding-bottom: 15px;
 }
 
-#footer{
+#footer {
   color: #d3d3d3;
   padding: 12px;
   font-family: dosvga;
@@ -214,73 +214,74 @@ html, body{
   font-size: 1vw;
 }
 
-#main{
+#main {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-#additional{
+#additional {
   width: 100%;
   height: 100%;
   display: none;
 }
 
-fieldset{
+fieldset {
   padding: 10px;
   height: 100%;
   font-family: dosvga;
 }
 
-fieldset a{
-  display:block;
+fieldset a {
+  display: block;
   padding: 6px;
   text-decoration: none;
   font-size: 1vw;
 }
 
-fieldset a:visited{
+fieldset a:visited {
   color: #00f;
 }
 
-fieldset a:hover{
+fieldset a:hover {
   background-color: black;
   color: white;
 }
 
-fieldset a:active{
+fieldset a:active {
   background-color: #00f;
   color: white;
 }
 
-fieldset a:focus{
+fieldset a:focus {
   background-color: black;
   color: white;
 }
 
-legend{
+legend {
   font-family: dosvga;
 }
 
-#top-left, #top-right,
-#bottom-left, #bottom-right{
+#top-left,
+#top-right,
+#bottom-left,
+#bottom-right {
   width: 45%;
   height: 40%;
   margin: 25px;
   float: left;
 }
 
-@media screen and (max-width: 980px){
-
-  #header h1{
+@media screen and (max-width: 980px) {
+  #header h1 {
     color: white;
     font-size: 12px;
     font-family: dosvga;
-    letter-spacing: .3vw;
+    letter-spacing: 0.3vw;
     line-height: 1.35;
   }
 
-  #tabs{
+  #tabs {
     width: 100%;
     height: 40%;
     color: white;
@@ -291,22 +292,22 @@ legend{
     line-height: 1.8;
   }
 
-  #navigation{
+  #navigation {
     list-style-type: none;
     margin: 0;
     height: 100%;
   }
 
-  #tabs ul li{
+  #tabs ul li {
     display: inline;
     padding: 16px;
   }
 
-  .navlist{
+  .navlist {
     float: left;
   }
 
-  #browser-info{
+  #browser-info {
     height: 35%;
     width: 100%;
     padding: 25px;
@@ -316,13 +317,13 @@ legend{
     line-height: 1.2;
   }
 
-  .info-right-side{
+  .info-right-side {
     right: 50%;
     position: absolute;
     color: #00f;
   }
 
-  #footer{
+  #footer {
     color: #d3d3d3;
     padding: 6px;
     font-family: dosvga;
