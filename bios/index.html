@@ -11,40 +11,37 @@
     <title>System Settings</title>
   </head>
   <body>
-    <div id="wrapper">
-      <div id="head-wrap">
-        <div id="header">
-          <h1 id="header-h1">BIOS BROWSER SETUP UTILITY</h1>
+    <div class="wrapper">
+      <header class="header-container">
+        <div class="header">
+          <h1 class="header__heading">BIOS BROWSER SETUP UTILITY</h1>
         </div>
-        <div id="tabs">
-          <ul id="navigation">
+        <nav class="tabs">
+          <ul class="tabs-list">
             <li
-              class="active"
-              id="maintab"
-              onclick="toggleMain()"
-              onkeypress="toggleMain()"
+              class="tabs-list__tab active main"
+              onclick="toggleTab(0, 'main')"
+              onkeypress="toggleTab(0, 'main')"
               tabindex="1"
             >
               Main
             </li>
-            <!--
-          -->
             <li
-              id="additionaltab"
-              onclick="toggleAdditional()"
-              onkeypress="toggleAdditional()"
+              class="tabs-list__tab additional"
+              onclick="toggleTab(1, 'additional')"
+              onkeypress="toggleTab(1,'additional')"
               tabindex="2"
             >
               Additional
             </li>
           </ul>
-        </div>
-      </div>
-      <div id="body-wrapper">
-        <div id="body-wrapper-inside">
-          <div id="main">
-            <div id="left-categories">
-              <div id="browser-info">
+        </nav>
+      </header>
+      <main class="body-container">
+        <div class="body-container__inner">
+          <div id="main" class="body-content active">
+            <div class="body-content__column">
+              <div class="content">
                 <h3>Browser Stats</h3>
                 <p>
                   System Date: <span id="date" class="info-right-side"></span>
@@ -64,9 +61,9 @@
                   Platform: <span id="platform" class="info-right-side"></span>
                 </p>
               </div>
-              <div id="links">
+              <div class="links">
                 <h3>QuickLinks</h3>
-                <ul id="links-row-1">
+                <ul class="links__row">
                   <li>
                     <a href="https://www.gamefaqs.com" tabindex="3">Link 1</a>
                   </li>
@@ -85,16 +82,18 @@
                 </ul>
               </div>
             </div>
-            <div id="right-info">
-              <h3>Help/Information</h3>
+            <div class="body-content__column">
+              <div class="content">
+                <h3>Help/Information</h3>
 
-              <p>Move Forwards: < TAB ></p>
-              <p>Move Backwards: < SHIFT + TAB ></p>
-              <p>Select: < ENTER ></p>
+                <p>Move Forwards: < <kbd>tab</kbd> ></p>
+                <p>Move Backwards: < <kbd>shift + tab</kbd> ></p>
+                <p>Select: < <kbd>enter</kbd> ></p>
+              </div>
             </div>
           </div>
-          <div id="additional">
-            <div id="top-left">
+          <div id="additional" class="body-content">
+            <div class="body-content__box">
               <fieldset>
                 <legend>Reddit</legend>
                 <a href="https://old.reddit.com/r/soccer">Reddit Link 1</a>
@@ -107,7 +106,7 @@
                 <a href="https://old.reddit.com/r/web_design">Reddit Link 6</a>
               </fieldset>
             </div>
-            <div id="top-right">
+            <div class="body-content__box">
               <fieldset>
                 <legend>Entertainment</legend>
                 <a href="https://www2.gogoanime.se">Entertainment Link 1</a>
@@ -116,7 +115,7 @@
                 <a href="http://www.gundamforums.com/">Entertainment Link 4</a>
               </fieldset>
             </div>
-            <div id="bottom-left">
+            <div class="body-content__box">
               <fieldset>
                 <legend>Education</legend>
                 <a href="http://libgen.io/">Education Link 1</a>
@@ -125,7 +124,7 @@
                 <a href="http://www.html5gamedevs.com/">Education Link 4</a>
               </fieldset>
             </div>
-            <div id="bottom-right">
+            <div class="body-content__box">
               <fieldset>
                 <legend>Extras</legend>
                 <a href="http://www.mmbnchronox.com/">Extras Link 1</a>
@@ -137,10 +136,10 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="footer">
-        <p id="footer-p">
-          v01.00 &copy; Copyright Adi Vrskic 2018 :: Property of [BIOS] Systems,
+      </main>
+      <footer class="footer-container">
+        <p>
+          v01.50 &copy; Copyright Adi Vrskic 2021 :: Property of [BIOS] Systems,
           Inc.
         </p>
       </div>

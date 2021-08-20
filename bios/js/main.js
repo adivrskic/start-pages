@@ -61,30 +61,17 @@ document.getElementById("browserName").innerHTML = browserName;
 const platform = navigator.platform;
 document.getElementById("platform").innerHTML = platform;
 
-const main = document.getElementById("main");
-const additional = document.getElementById("additional");
+const toggleTab = (index, id) => {
+  const tabs = document.querySelectorAll(".tabs-list__tab");
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove("active");
+  }
+  tabs[index].classList.add("active");
 
-const maintab = document.getElementById("maintab");
-const additionaltab = document.getElementById("additionaltab");
-
-const toggleMain = () => {
-  if (main.style.display !== "block") {
-    main.style.display = "block";
-    additional.style.display = "none";
+  const content = document.querySelectorAll(".body-content");
+  for (let i = 0; i < content.length; i++) {
+    content[i].classList.remove("active");
   }
-  if (!maintab.classList.contains("active")) {
-    maintab.classList.add("active");
-    additionaltab.classList.remove("active");
-  }
-};
-
-const toggleAdditional = () => {
-  if (additional.style.display !== "block") {
-    main.style.display = "none";
-    additional.style.display = "block";
-  }
-  if (!additionaltab.classList.contains("active")) {
-    additionaltab.classList.add("active");
-    maintab.classList.remove("active");
-  }
+  const activeContent = document.getElementById(id);
+  activeContent.classList.add("active");
 };
