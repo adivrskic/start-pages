@@ -11,141 +11,137 @@
     <title>System Settings</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header-container">
-        <div class="header">
-          <h1 class="header__heading">BIOS BROWSER SETUP UTILITY</h1>
+    <header class="header">
+      <h1 class="header__heading">BIOS BROWSER SETUP UTILITY</h1>
+      <nav class="header__tabs">
+        <ul class="header__tabs-list">
+          <li
+            class="header__tab active main"
+            onclick="toggleTab(0, 'main')"
+            onkeypress="toggleTab(0, 'main')"
+            tabindex="1"
+          >
+            Main
+          </li>
+          <li
+            class="header__tab additional"
+            onclick="toggleTab(1, 'additional')"
+            onkeypress="toggleTab(1,'additional')"
+            tabindex="2"
+          >
+            Additional
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="main" class="main-content active">
+        <div class="main-content__column">
+          <div class="main-content__item">
+            <h3>Browser Stats</h3>
+            <p>
+              <span>System Date: </span>
+              <span id="date" class="info-right-side"></span>
+            </p>
+            <p>
+              <span>System Time: </span>
+              <span id="time" class="info-right-side"></span>
+            </p>
+            <p>
+              <span>Browser Code Name: </span>
+              <span id="browserCode" class="info-right-side"></span>
+            </p>
+            <p>
+              <span>Browser Name: </span>
+              <span id="browserName" class="info-right-side"></span>
+            </p>
+            <p>
+              <span>Platform: </span>
+              <span id="platform" class="info-right-side"></span>
+            </p>
+          </div>
+          <div class="main-content__item">
+            <h3>QuickLinks</h3>
+            <ul class="links__row">
+              <li>
+                <a href="https://www.gamefaqs.com" tabindex="3">Link 1</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com" tabindex="4">Link 2</a>
+              </li>
+              <li>
+                <a href="https://www2.gogoanime.se" tabindex="4">Link 3</a>
+              </li>
+              <li>
+                <a href="https://www.amazon.com" tabindex="5">Link 4</a>
+              </li>
+              <li>
+                <a href="https://www.soccerway.com" tabindex="6">Link 5</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav class="tabs">
-          <ul class="tabs-list">
-            <li
-              class="tabs-list__tab active main"
-              onclick="toggleTab(0, 'main')"
-              onkeypress="toggleTab(0, 'main')"
-              tabindex="1"
-            >
-              Main
-            </li>
-            <li
-              class="tabs-list__tab additional"
-              onclick="toggleTab(1, 'additional')"
-              onkeypress="toggleTab(1,'additional')"
-              tabindex="2"
-            >
-              Additional
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="body-container">
-        <div class="body-container__inner">
-          <div id="main" class="body-content active">
-            <div class="body-content__column">
-              <div class="content">
-                <h3>Browser Stats</h3>
-                <p>
-                  System Date: <span id="date" class="info-right-side"></span>
-                </p>
-                <p>
-                  System Time: <span id="time" class="info-right-side"></span>
-                </p>
-                <p>
-                  Browser Code Name:
-                  <span id="browserCode" class="info-right-side"></span>
-                </p>
-                <p>
-                  Browser Name:
-                  <span id="browserName" class="info-right-side"></span>
-                </p>
-                <p>
-                  Platform: <span id="platform" class="info-right-side"></span>
-                </p>
-              </div>
-              <div class="links">
-                <h3>QuickLinks</h3>
-                <ul class="links__row">
-                  <li>
-                    <a href="https://www.gamefaqs.com" tabindex="3">Link 1</a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com" tabindex="4">Link 2</a>
-                  </li>
-                  <li>
-                    <a href="https://www2.gogoanime.se" tabindex="4">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="https://www.amazon.com" tabindex="5">Link 4</a>
-                  </li>
-                  <li>
-                    <a href="https://www.soccerway.com" tabindex="6">Link 5</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="body-content__column">
-              <div class="content">
-                <h3>Help/Information</h3>
+        <div class="main-content__column">
+          <div class="main-content__item">
+            <h3>Help/Information</h3>
 
-                <p>Move Forwards: < <kbd>tab</kbd> ></p>
-                <p>Move Backwards: < <kbd>shift + tab</kbd> ></p>
-                <p>Select: < <kbd>enter</kbd> ></p>
-              </div>
-            </div>
-          </div>
-          <div id="additional" class="body-content">
-            <div class="body-content__box">
-              <fieldset>
-                <legend>Reddit</legend>
-                <a href="https://old.reddit.com/r/soccer">Reddit Link 1</a>
-                <a href="https://old.reddit.com/r/vaporwave">Reddit Link 2</a>
-                <a href="https://old.reddit.com/r/outrun">Reddit Link 3</a>
-                <a href="https://old.reddit.com/r/gaming">Reddit Link 4</a>
-                <a href="https://old.reddit.com/r/listentothis"
-                  >Reddit Link 5</a
-                >
-                <a href="https://old.reddit.com/r/web_design">Reddit Link 6</a>
-              </fieldset>
-            </div>
-            <div class="body-content__box">
-              <fieldset>
-                <legend>Entertainment</legend>
-                <a href="https://www2.gogoanime.se">Entertainment Link 1</a>
-                <a href="http://www.thespectrum.net">Entertainment Link 2</a>
-                <a href="https://www.kissmanga.com">Entertainment Link 3</a>
-                <a href="http://www.gundamforums.com/">Entertainment Link 4</a>
-              </fieldset>
-            </div>
-            <div class="body-content__box">
-              <fieldset>
-                <legend>Education</legend>
-                <a href="http://libgen.io/">Education Link 1</a>
-                <a href="https://www.udemy.com/">Education Link 2</a>
-                <a href="https://youtube.com">Education Link 3</a>
-                <a href="http://www.html5gamedevs.com/">Education Link 4</a>
-              </fieldset>
-            </div>
-            <div class="body-content__box">
-              <fieldset>
-                <legend>Extras</legend>
-                <a href="http://www.mmbnchronox.com/">Extras Link 1</a>
-                <a
-                  href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/"
-                  >Extras Link 2</a
-                >
-              </fieldset>
-            </div>
+            <p><span>Move Forwards: </span><span>< <kbd>tab</kbd> ></span></p>
+            <p><span>Move Backwards: </span><span>< <kbd>shift + tab</kbd> ></span></p>
+            <p><span>Select: </span><span>< <kbd>enter</kbd> ></span></p>
           </div>
         </div>
-      </main>
-      <footer class="footer-container">
-        <p>
-          v01.50 &copy; Copyright Adi Vrskic 2021 :: Property of [BIOS] Systems,
-          Inc.
-        </p>
       </div>
+      <div id="additional" class="main-content main-content-grid">
+        <div class="main-content__box">
+          <fieldset>
+            <legend>Reddit</legend>
+            <a href="https://old.reddit.com/r/soccer">Reddit Link 1</a>
+            <a href="https://old.reddit.com/r/vaporwave">Reddit Link 2</a>
+            <a href="https://old.reddit.com/r/outrun">Reddit Link 3</a>
+            <a href="https://old.reddit.com/r/gaming">Reddit Link 4</a>
+            <a href="https://old.reddit.com/r/listentothis"
+              >Reddit Link 5</a
+            >
+            <a href="https://old.reddit.com/r/web_design">Reddit Link 6</a>
+          </fieldset>
+        </div>
+        <div class="main-content__box">
+          <fieldset>
+            <legend>Entertainment</legend>
+            <a href="https://www2.gogoanime.se">Entertainment Link 1</a>
+            <a href="http://www.thespectrum.net">Entertainment Link 2</a>
+            <a href="https://www.kissmanga.com">Entertainment Link 3</a>
+            <a href="http://www.gundamforums.com/">Entertainment Link 4</a>
+          </fieldset>
+        </div>
+        <div class="main-content__box">
+          <fieldset>
+            <legend>Education</legend>
+            <a href="http://libgen.io/">Education Link 1</a>
+            <a href="https://www.udemy.com/">Education Link 2</a>
+            <a href="https://youtube.com">Education Link 3</a>
+            <a href="http://www.html5gamedevs.com/">Education Link 4</a>
+          </fieldset>
+        </div>
+        <div class="main-content__box">
+          <fieldset>
+            <legend>Extras</legend>
+            <a href="http://www.mmbnchronox.com/">Extras Link 1</a>
+            <a
+              href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/"
+              >Extras Link 2</a
+            >
+          </fieldset>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        v01.50 &copy; Copyright Adi Vrskic 2021 :: Property of [BIOS] Systems,
+        Inc.
+      </p>
     </div>
 
     <script src="js/main.js"></script>
-    <script src="js/logs.js"></script>
   </body>
 </html>

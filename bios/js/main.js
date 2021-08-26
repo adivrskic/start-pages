@@ -1,3 +1,5 @@
+console.log("%c Welcome to the BIOS.", "color:yellow; background-color:blue");
+
 const months = [
   "01",
   "02",
@@ -62,13 +64,13 @@ const platform = navigator.platform;
 document.getElementById("platform").innerHTML = platform;
 
 const toggleTab = (index, id) => {
-  const tabs = document.querySelectorAll(".tabs-list__tab");
+  const tabs = document.querySelectorAll(".header__tab");
   for (let i = 0; i < tabs.length; i++) {
     tabs[i].classList.remove("active");
   }
   tabs[index].classList.add("active");
 
-  const content = document.querySelectorAll(".body-content");
+  const content = document.querySelectorAll(".main-content");
   for (let i = 0; i < content.length; i++) {
     content[i].classList.remove("active");
   }
