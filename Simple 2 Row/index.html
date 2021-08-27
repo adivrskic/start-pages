@@ -4,84 +4,79 @@
 	<title>Welcome Adi</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css" >
 </head>
-<body onload="startTime()">
-	<div id="container">
-
-		<div id="search_container">
-			<form action="http://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+<body>
+	<main class="startpage">
+		<div class="startpage__row">
+			<form action="http://www.google.com/search" class="search" method="get" name="searchform" target="_blank">
 				<input name="sitesearch" type="hidden" value="www.google.com">
-				<input autocomplete="on" class="searchbar" name="q" placeholder="Search..." required="required"  type="text">
-				<button class="button" type="submit">Search</button>
+				<input autocomplete="on" class="search__bar" name="q" placeholder="Search..." required="required"  type="text">
+				<button class="search__button" type="submit">Search</button>
 			</form>
 		</div>
 
-		<div id="links_container">
-			<div id="links_row_one">
-				<div class="link">
-					<img src="images/youtube.png"></a>
-					<div class="link_text">
-						<a href="http://www.youtube.com" target="_blank">Youtube</a>
-					</div>
-				</div>
+		<div class="startpage__row links">
+      <div class="link">
+        <img src="images/youtube.png"></a>
+        <div class="link__text">
+          <a href="http://www.youtube.com" target="_blank">Youtube</a>
+        </div>
+      </div>
 
-				<div class="link">
-					<img src="images/d2l.png"></a>
-					<div class="link_text">
-						<a href="http://d2l.kennesaw.edu" target="_blank">D2L</a>
-					</div>
-				</div>
+      <div class="link">
+        <img src="images/d2l.png"></a>
+        <div class="link__text">
+          <a href="http://d2l.kennesaw.edu" target="_blank">D2L</a>
+        </div>
+      </div>
 
-				<div class="link">
-					<img src="images/amazon.png"></a>
-					<div class="link_text">
-						<a href="http://www.amazon.com" target="_blank">Amazon</a>
-					</div>
-				</div>
+      <div class="link">
+        <img src="images/amazon.png"></a>
+        <div class="link__text">
+          <a href="http://www.amazon.com" target="_blank">Amazon</a>
+        </div>
+      </div>
 
-				<div class="link">
-					<img src="images/reddit.png"></a>
-					<div class="link_text">
-						<a href="http://www.reddit.com" target="_blank">Reddit</a>
-					</div>
-				</div>
-			</div>
+      <div class="link">
+        <img src="images/reddit.png"></a>
+        <div class="link__text">
+          <a href="http://www.reddit.com" target="_blank">Reddit</a>
+        </div>
+      </div>
 
-			<div id="links_row_two">
-				<div class="link">
-					<img src="images/gamefaqs.png"></a>
-					<div class="link_text">
-						<a href="http://gamefaqs.gamespot.com" target="_blank">GameFAQs</a>
-					</div>
-				</div>
+      <div class="link">
+        <img src="images/gamefaqs.png"></a>
+        <div class="link__text">
+          <a href="http://gamefaqs.gamespot.com" target="_blank">GameFAQs</a>
+        </div>
+      </div>
 
-				<div class="link">
-					<img src="images/soccerway.png"></a>
-					<div class="link_text">
-						<a href="http://www.soccerway.com" target="_blank">Soccerway</a>
-					</div>
-				</div>
+      <div class="link">
+        <img src="images/soccerway.png"></a>
+        <div class="link__text">
+          <a href="http://www.soccerway.com" target="_blank">Soccerway</a>
+        </div>
+      </div>
 
-				<div class="link">
-					<img src="images/gogoanime.png"></a>
-					<div class="link_text">
-						<a href="https://www2.gogoanime.se/" target="_blank">GogoAnime</a>
-					</div>
-				</div>
+      <div class="link">
+        <img src="images/gogoanime.png"></a>
+        <div class="link__text">
+          <a href="https://www2.gogoanime.se/" target="_blank">GogoAnime</a>
+        </div>
+      </div>
 
-				<div class="link">
-					<img src="images/spectrum.png"></a>
-					<div class="link_text">
-						<a href="http://www.thespectrum.net" target="_blank">The Spectrum</a>
-					</div>
-				</div>
-			</div>
+      <div class="link">
+        <img src="images/spectrum.png"></a>
+        <div class="link__text">
+          <a href="http://www.thespectrum.net" target="_blank">The Spectrum</a>
+        </div>
+      </div>
 		</div>
 
-		<div id="extras_container">
+		<div class="startpage__row">
 			<div id="date"></div>
 			<div id="time"></div>
 		</div>
-	</div>
+	</main>
 
 	<script src="js/main.js"></script>
 </body>
